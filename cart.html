@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Noir Vault</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Cart 페이지 스타일 */
+        .cart-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-container h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .cart-table th, .cart-table td {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .cart-table th {
+            background-color: #f4f4f4;
+        }
+
+        .cart-product-img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .product-details {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-control button {
+            width: 30px;
+            height: 30px;
+            background-color: #ddd;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .quantity-control input {
+            width: 50px;
+            text-align: center;
+            margin: 0 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-banner">
+                <div class="banner">
+                    <a href="index.html"><img src="images/noir_vault_logo.png" alt="Noir Vault Logo"></a>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="brands.html">BRANDS</a></li>
+                <li><a href="sale.html">SALE</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Bag (2)</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="cart-container">
+        <h2>Shopping Bag</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product Details</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Shipping</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" checked></td>
+                    <td>
+                        <img src="images/adidasbalenciaga.jpg" alt="Product 1" class="cart-product-img">
+                        <div class="product-details">
+                            <p>Balenciaga</p>
+                            <p>Adidas & Balenciaga Stansmith </p>
+                            <p>$700.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$700.00</td>
+                    <td>Free Shipping</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" checked></td>
+                    <td>
+                        <img src="images/nikebode.jpg" alt="Product 2" class="cart-product-img">
+                        <div class="product-details">
+                            <p>Bode</p>
+                            <p>Nike & Bode Astrograbber</p>
+                            <p>$550.00</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="quantity-control">
+                            <button>-</button>
+                            <input type="text" value="1">
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$750.00</td>
+                    <td>Free Shipping</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="checkout.html" class="btn">Proceed to Checkout</a>
+    </div>
+</body>
+</html>
